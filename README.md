@@ -4,14 +4,22 @@
 
 ## Table of Contents
 
-  - [USER sendTransaction](#user-sendtransaction)
+  - [User sendTransaction](#user-sendtransaction)
     - [sendBOS](#type---sendbos)
-    - [sendProposal](### type - sendProposal)
-    - [sendVote](#sendVote)
-  - [Account Operations](#Account Operations)
-    - [createSeed](#createSeed)
+    - [sendProposal](#type---sendproposal)
+    - [sendVote](#sendvote)
+  - [Account Operations](#account-operations)
+    - [createSeed](#createseed)
+    - [confirmSeed](#confirmseed)
+    - [getAccount](#getAccount)
+    - [getBalance](#getBalance)
+    - [getFreezingStatus](#getFreezingStatus)
+    - [getAccountTransaction](#getAccountTransaction)
+    - [delAccount](#delAccount)
+  - [Account Control Operations](#account-control-operations)
+    - [setAccountName](#setAccountName)
 
-## USER sendTransaction
+## User sendTransaction
 
 - ### type - sendBOS
 
