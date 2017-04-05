@@ -57,7 +57,7 @@
  { "sendVote" : true }
 ```
 
-## Account Operation
+## Account Operations
 
 - ### createSeed
 
@@ -169,7 +169,7 @@
  { “delAccount" : true}
 ```
 
-## Account Control Operation
+## Account Control Operations
 
 - ### setAccountName
 
@@ -184,3 +184,139 @@
 ```
  { "setName" : true}
 ```
+
+## Block Operations
+
+- ### getBlock
+
+ http://localhost:8080/blockchain/BlockOperations/getBlock
+
+> #### Request parameter :
+```
+ { "block height" : uint}
+```
+> #### Response parameter :
+```
+ { "block height" : uint,
+   "previousBlockHash" : "string",
+   "generator" : "account address",
+   "nextBlock" : uint,
+   "transactions" : [ 
+     "string",
+     "string",
+     "string",
+     "string",
+     "string"
+     ],
+   "timestamp" : uint}
+```
+
+- ### getBlockInformation
+
+ http://localhost:8080/blockchain/BlockOperations/getBlockInformation
+
+> #### Request parameter :
+```
+ Nothing
+```
+> #### Response parameter :
+```
+ { "block height" : uint,
+   "timestamp" : uint,
+   "amount" : udouble,
+   "fee" : udouble,
+   "generator" : "account address"}
+```
+
+## Freezing Operations
+
+- ### setFreezing
+
+ http://localhost:8080/blockchain/FreezingOperations/setFreezing
+
+> #### Request parameter :
+```
+ { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX",
+   "freezing status" : true,
+   "freezing amount" : udouble}
+```
+> #### Response parameter :
+```
+ { "account address" : BOS-XXXXX-XXXXX-XXXXXXX",
+   "setFreezing" : true, 
+   "freezing amount" : udouble,
+   "account balance" : udouble(total amount - freezing amount),
+   "freezing interests" : udouble,
+   "freezing start time" : uint } 
+```
+- ### unFreezing
+
+ http://localhost:8080/blockchain/FreezingOperations/unFreezing
+
+> #### Request parameter :
+```
+ { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX",
+   "freezing status" : false,
+   "freezing amount" : udouble}
+```
+> #### Response parameter :
+```
+ { "account address" : BOS-XXXXX-XXXXX-XXXXXXX",
+   "setFreezing" : false, 
+   "unfreezing amount" : udouble,
+   "total return amount" : udouble(unfreezing amount + interests),
+   "freezing stop time" : uint } 
+```
+
+## Networking Operations
+
+- ### findQuorum
+
+ http://localhost:8080/blockchain/NetworkingOperations/findQuorum
+
+> #### Request parameter :
+```
+ Nothing
+```
+> #### Response parameter :
+```
+ { "quorum list" : [ 
+     "string",
+     "string",
+     "string",
+     "string",
+     "string"
+     ]}
+```
+
+- ### joinQuorum
+
+ http://localhost:8080/blockchain/NetworkingOperations/joinQuorum
+
+> #### Request parameter :
+```
+ { "select quorom" : "string"}
+```
+> #### Response parameter :
+```
+ { "joinQuorom" : true}
+```
+
+- ### releaseQuorum
+
+ http://localhost:8080/blockchain/NetworkingOperations/releaseQuorum
+
+> #### Request parameter :
+```
+ { "release quorom" : "string"}
+```
+> #### Response parameter :
+```
+ { "releaseQuorum" : true}
+```
+
+## Proposal Operations
+
+## Trust Contract Operations
+
+## Voting Operations
