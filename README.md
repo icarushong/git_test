@@ -30,7 +30,6 @@
 > #### Response parameter :
 ```
  { "sendProposal" : true }
-
 ```
 
 - ### type - sendVote
@@ -58,33 +57,33 @@
 ```
 > #### Response parameter :
 ```
- { "passphrase" : 12 words }
+ { "passphrase" : 12 words}
 ```
 
 
- - ### confirmSeed
+- ### confirmSeed
 
  http://localhost:8080/blockchain/AccountOperations/confirmSeed
 
 > #### Request parameter :
 ```
- { "passphrase" : 12 words }
+ { "passphrase" : 12 words}
 ```
 > #### Response parameter :
 ```
  { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX",
    "account balance" : 0,
-   "freezing status" : false }
+   "freezing status" : false}
 ```
 
 
-    - ### getAccount
+- ### getAccount
 
  http://localhost:8080/blockchain/AccountOperations/getAccount
 
 > #### Request parameter :
 ```
- { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX" }
+ {"account address" : "BOS-XXXXX-XXXXX-XXXXXXX"}
 ```
 > #### Response parameter :
 ```
@@ -95,5 +94,5 @@
    "freezing status" : bool,
    "freezing amount" : udouble,
    "freezing start time" : uint,
-   "freezing interests" : udouble }
+   "freezing interests" : udouble}
 ```
