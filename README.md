@@ -13,11 +13,11 @@ http://localhost:8080//blockchain/transactions/sendTransaction
 ```
 >>#### Request parameter :
 ```
-sendBOS(type)/sender account address/receiver account address/amount/fee
+>>sendBOS(type)/sender account address/receiver account address/amount/fee
 ```
 >>#### Response parameter :
 ```
-{ "sendBOS" : true }
+>>{ "sendBOS" : true }
 ```
 
 > ### type - sendProposal
@@ -25,11 +25,11 @@ sendBOS(type)/sender account address/receiver account address/amount/fee
 ```
 http://localhost:8080//blockchain/transactions/sendTransaction
 ```
-#### Request parameter :
+>>#### Request parameter :
 ```
 sendProposal(type)/sender account address/receiver account address/contents/fee
 ```
-#### Response parameter :
+>>#### Response parameter :
 ```
 { "sendProposal" : true }
 ```
