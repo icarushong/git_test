@@ -2,7 +2,7 @@
 
 # RESTful API
 
--##sendTransaction
+- ## sendTransaction
 
 > ### type - sendBOS
 
