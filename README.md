@@ -2,9 +2,16 @@
 
 # RESTful API
 
-[ More Information](https://www.boscoin.io)
+## Table of Contents
 
-## User sendTransaction
+  - [USER sendTransaction](#USER sendTransaction)
+    - [sendBOS](#quick-sendBOS)
+    - [sendProposal](#sendProposal)
+    - [sendVote](#sendVote)
+  - [Account Operations](#Account Operations)
+    - [createSeed](#createSeed)
+
+## USER sendTransaction
 
 - ### type - sendBOS
 
