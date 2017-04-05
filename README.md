@@ -6,10 +6,10 @@
 
 ## sendTransaction
 
-> ### type - sendBOS
+- ### type - sendBOS
 
   http://localhost:8080/blockchain/transactions/sendTransaction
-  
+
 
 >#### Request parameter :
 ```
@@ -20,7 +20,7 @@
  { "sendBOS" : true }
 ```
 
-> ### type - sendProposal
+- ### type - sendProposal
 
 ```
 http://localhost:8080//blockchain/transactions/sendTransaction
