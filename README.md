@@ -2,18 +2,18 @@
 
 # RESTful API
 
-## sendTransaction
+## - sendTransaction
 
-### type - sendBOS
+### >type - sendBOS
 
 ```
 http://localhost:8080//blockchain/transactions/sendTransaction
 ```
-#### Request parameter :
+####> Request parameter :
 ```
 sendBOS(type)/sender account address/receiver account address/amount/fee
 ```
-#### Response parameter :
+#### >Response parameter :
 ```
 { "sendBOS" : true }
 ```
