@@ -8,7 +8,7 @@
 
 - ### type - sendBOS
 
-  #### http://localhost:8080/blockchain/transactions/sendTransaction
+ http://localhost:8080/blockchain/transactions/sendTransaction
 
 >#### Request parameter :
 ```
