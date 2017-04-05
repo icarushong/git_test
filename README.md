@@ -2,6 +2,8 @@
 
 # RESTful API
 
+[ More Information](https://www.boscoin.io)
+
 - ## sendTransaction
 
 > ### type - sendBOS
