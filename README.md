@@ -4,9 +4,9 @@
 
 ## Table of Contents
 
-  - [USER sendTransaction](#USER sendTransaction)
-    - [sendBOS](#quick-sendBOS)
-    - [sendProposal](#sendProposal)
+  - [USER sendTransaction](#user-sendtransaction)
+    - [sendBOS](#type-sendbos)
+    - [sendProposal](### type - sendProposal)
     - [sendVote](#sendVote)
   - [Account Operations](#Account Operations)
     - [createSeed](#createSeed)
