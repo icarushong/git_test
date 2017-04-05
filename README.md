@@ -4,7 +4,7 @@
 
 [ More Information](https://www.boscoin.io)
 
-- ## sendTransaction
+## sendTransaction
 
 > ### type - sendBOS
 
@@ -20,14 +20,14 @@ sendBOS(type)/sender account address/receiver account address/amount/fee
 { "sendBOS" : true }
 ```
 
-### type - sendProposal
+> ### type - sendProposal
 
 ```
 http://localhost:8080//blockchain/transactions/sendTransaction
 ```
 #### Request parameter :
 ```
-sendBOS(type)/sender account address/receiver account address/amount/fee
+sendProposal(type)/sender account address/receiver account address/contents/fee
 ```
 #### Response parameter :
 ```
