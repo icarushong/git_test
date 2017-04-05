@@ -69,7 +69,7 @@
 ```
 > #### Response parameter :
 ```
- { "passphrase" : 12 words}
+ { "passphrase" : "12 words"}
 ```
 
 - ### confirmSeed
@@ -78,7 +78,7 @@
 
 > #### Request parameter :
 ```
- { "passphrase" : 12 words}
+ { "passphrase" : "12 words"}
 ```
 > #### Response parameter :
 ```
@@ -166,5 +166,21 @@
 ```
 > #### Response parameter :
 ```
- { “delAccouint" : true}
+ { “delAccount" : true}
+```
+
+## Account Control Operation
+
+- ### setAccountName
+
+ http://localhost:8080/blockchain/AccountControlOperations/setAccountName
+
+> #### Request parameter :
+```
+ { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX",
+   "rename" : "string"}
+```
+> #### Response parameter :
+```
+ { "setName" : true}
 ```
