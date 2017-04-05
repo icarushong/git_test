@@ -59,6 +59,7 @@
 > #### Response parameter :
 ```
  { "passphrase" : 12 words }
+```
 
 
  - ### confirmSeed
@@ -74,6 +75,7 @@
  { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX",
    "account balance" : 0,
    "freezing status" : false }
+```
 
 
     - ### getAccount
@@ -94,3 +96,4 @@
    "freezing amount" : udouble,
    "freezing start time" : uint,
    "freezing interests" : udouble }
+```
