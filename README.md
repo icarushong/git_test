@@ -29,5 +29,5 @@ sendBOS(type)/sender account address/receiver account address/amount/fee
 ```
 #### Response parameter :
 ```
-{ "sendBOS" : true }
+{ "sendProposal" : true }
 ```
