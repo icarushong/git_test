@@ -15,5 +15,19 @@ sendBOS(type)/sender account address/receiver account address/amount/fee
 ```
 #### Response parameter :
 ```
-{ "sendBOS" : true }
+if status OK is { "sendBOS" : true }
+```
+
+### type - sendProposal
+
+```
+http://localhost:8080//blockchain/transactions/sendTransaction
+```
+#### Request parameter :
+```
+sendBOS(type)/sender account address/receiver account address/amount/fee
+```
+#### Response parameter :
+```
+if status OK is { "sendBOS" : true }
 ```
