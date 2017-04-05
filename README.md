@@ -60,7 +60,6 @@
  { "passphrase" : 12 words}
 ```
 
-
 - ### confirmSeed
 
  http://localhost:8080/blockchain/AccountOperations/confirmSeed
@@ -76,14 +75,13 @@
    "freezing status" : false}
 ```
 
-
 - ### getAccount
 
  http://localhost:8080/blockchain/AccountOperations/getAccount
 
 > #### Request parameter :
 ```
- {"account address" : "BOS-XXXXX-XXXXX-XXXXXXX"}
+ { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX"}
 ```
 > #### Response parameter :
 ```
@@ -95,4 +93,66 @@
    "freezing amount" : udouble,
    "freezing start time" : uint,
    "freezing interests" : udouble}
+```
+
+- ### getBalance
+
+ http://localhost:8080/blockchain/AccountOperations/getBalance
+
+> #### Request parameter :
+```
+ { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX"}
+```
+> #### Response parameter :
+```
+ { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX",
+   "account balance" : udouble,
+   "available balance" : udouble,
+   "pending balance" : udouble}
+```
+
+- ### getFreezingStatus
+
+ http://localhost:8080/blockchain/AccountOperations/getgetFreezingStatus
+
+> #### Request parameter :
+```
+ { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX"}
+```
+> #### Response parameter :
+```
+ { "freezing status" : bool,
+   "freezing amount" : udouble,
+   "freezing start time" : uint,
+   "freezing interests" : udouble}
+```
+
+- ### getAccountTransaction
+
+ http://localhost:8080/blockchain/AccountOperations/getAccountTransaction
+
+> #### Request parameter :
+```
+ { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX"}
+```
+> #### Response parameter :
+```
+ { {“type" : "sendBOS/sendProposal/sendVote",
+   “timestamp" : uint,
+   “amount" : double,
+   “fee or reward" : double,
+   “accout address" : "BOS-XXXXX-XXXXX-XXXXXXX"}
+```
+
+- ### delAccount
+
+ http://localhost:8080/blockchain/AccountOperations/delAccount
+
+> #### Request parameter :
+```
+ { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX"}
+```
+> #### Response parameter :
+```
+ { “delAccouint" : true}
 ```
