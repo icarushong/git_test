@@ -15,7 +15,7 @@ sendBOS(type)/sender account address/receiver account address/amount/fee
 ```
 #### Response parameter :
 ```
-if status OK is { "sendBOS" : true }
+{ "sendBOS" : true }
 ```
 
 ### type - sendProposal
@@ -29,5 +29,5 @@ sendBOS(type)/sender account address/receiver account address/amount/fee
 ```
 #### Response parameter :
 ```
-if status OK is { "sendBOS" : true }
+{ "sendBOS" : true }
 ```
