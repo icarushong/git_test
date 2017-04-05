@@ -12,7 +12,11 @@
 
 >#### Request parameter :
 ```
- sendBOS(type)/sender account address/receiver account address/amount/fee
+ { “type" : "sendBOS",
+   “sender accout address" : "BOS-XXXXX-XXXXX-XXXXXXX",
+   “receiver accout address" : "BOS-XXXXX-XXXXX-XXXXXXX",
+   “amount" : double,
+   “fee" : double}
 ```
 >#### Response parameter :
 ```
@@ -25,7 +29,11 @@
 
 > #### Request parameter :
 ```
- sendProposal(type)/sender account address/receiver account address/contents/fee
+ { “type" : "sendProposal",
+   “sender accout address" : "BOS-XXXXX-XXXXX-XXXXXXX",
+   “receiver accout address" : "BOS-XXXXX-XXXXX-XXXXXXX",
+   "contents" : "string",
+   “fee" : double}
 ```
 > #### Response parameter :
 ```
@@ -38,7 +46,11 @@
 
 > #### Request parameter :
 ```
- sendVote(type)/sender account address/receiver account address/contents/fee
+ { “type" : "sendVote",
+   “sender accout address" : "BOS-XXXXX-XXXXX-XXXXXXX",
+   “receiver accout address" : "BOS-XXXXX-XXXXX-XXXXXXX",
+   "contents" : "string",
+   “fee" : double}
 ```
 > #### Response parameter :
 ```
@@ -88,7 +100,7 @@
  { "account address" : "BOS-XXXXX-XXXXX-XXXXXXX",
    "account balance" : udouble,
    "available balance" : udouble,
-   "pending balance : udouble, 
+   "pending balance" : udouble, 
    "freezing status" : bool,
    "freezing amount" : udouble,
    "freezing start time" : uint,
@@ -137,7 +149,7 @@
 ```
 > #### Response parameter :
 ```
- { {“type" : "sendBOS/sendProposal/sendVote",
+ { “type" : "sendBOS/sendProposal/sendVote",
    “timestamp" : uint,
    “amount" : double,
    “fee or reward" : double,
