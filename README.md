@@ -5,7 +5,7 @@
 ## Table of Contents
 
   - [USER sendTransaction](#user-sendtransaction)
-    - [sendBOS](#type-sendbos)
+    - [sendBOS](#type---sendbos)
     - [sendProposal](### type - sendProposal)
     - [sendVote](#sendVote)
   - [Account Operations](#Account Operations)
