@@ -22,14 +22,14 @@
 
 - ### type - sendProposal
 
-```
-http://localhost:8080//blockchain/transactions/sendTransaction
-```
+  http://localhost:8080//blockchain/transactions/sendTransaction
+
+
 > #### Request parameter :
 ```
-   sendProposal(type)/sender account address/receiver account address/contents/fee
+ sendProposal(type)/sender account address/receiver account address/contents/fee
 ```
 > #### Response parameter :
 ```
-   { "sendProposal" : true }
+ { "sendProposal" : true }
 ```
