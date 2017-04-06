@@ -84,7 +84,7 @@ int account address count,
 
 >#### Receive parameter :
 ```
-uint BS_Ready, (complete)
-uint BS_Syncing, (progressing)
-unit BS_Offline (disconnection)
+int BS_Ready, (complete)
+int BS_Syncing, (progressing)
+nit BS_Offline (disconnection)
 ```
