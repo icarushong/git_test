@@ -1,21 +1,18 @@
-## Websocket Transaction for Web User Interface 
+# Websocket Transaction for Web User Interface 
 ### - Event Data from Core to UI front
 
 ## Table of Contents
 
   - [User receiveTransaction](#user-receivetransaction)
     - [receiveBOS](#type---receivebos)
+    - [receiveFreezingReward](#type---receivefreezingreward)
+    - [receiveConfirmReward](#type---receiveconfirmreward)
     - [receiveProposal](#type---receiveproposal)
-    - [sendVote](#sendvote)
+    - [receiveVote](#type---receivevote)
   - [Account Operations](#account-operations)
-    - [createSeed](#createseed)
-    - [confirmSeed](#confirmseed)
-    - [getAccount](#getaccount)
-    - [getBalance](#getbalance)
-    - [getFreezingStatus](#getfreezingstatus)
-    - [getAccountTransaction](#getaccounttransaction)
-    - [delAccount](#delaccount)
- 
+    - [recvAccountInformation](#recvaccountinformation)
+ - [Block Operations](#block-operations)
+    - [isBlockSync](#isblocksync)
 
 ## User receiveTransaction
 
@@ -26,13 +23,68 @@
 string receiveBOS, 
 string receiver account address, 
 string sender account address, 
-udouble amount
+double amount
+```
+
+- ### type - receiveFreezingReward
+
+>#### Receive parameter :
+```
+string receiveFreezingReward, 
+string receiver account address, 
+string sender account address, 
+double amount
+```
+
+- ### type - receiveConfirmReward
+
+>#### Receive parameter :
+```
+string receiveConfirmReward, 
+string receiver account address, 
+string sender account address, 
+double amount
 ```
 
 - ### type - receiveProposal
 
 >#### Receive parameter :
 ```
-string receiveProposal, string receiver account address, string account address, string contents
+string receiveProposal,
+string receiver account address, 
+string account address, 
+string contents
 ```
 
+- ### type - receiveVote
+
+>#### Receive parameter :
+```
+string receiveVote,
+string receiver account address, 
+string account address, 
+string contents
+```
+
+## Account Operations
+
+- ### recvAccountInformation
+
+>#### Receive parameter :
+```
+int account address cmount,
+[ string account address, 
+  double account balance, 
+  bool freezing status]
+```
+
+## Block Operations
+
+- ### isBlockSync
+
+>#### Receive parameter :
+```
+uint BS_Ready, (complete)
+uint BS_Syncing, (progressing)
+unit BS_Offline (disconnection)
+```
