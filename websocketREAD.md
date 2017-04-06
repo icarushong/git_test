@@ -1,4 +1,5 @@
-## Websocket Transaction for Web User Interface (Event Data from Core to UI front)
+## Websocket Transaction for Web User Interface 
+### - Event Data from Core to UI front
 
 ## Table of Contents
 
@@ -24,7 +25,7 @@
 ```
 string receiveBOS, 
 string receiver account address, 
-string account address, 
+string sender account address, 
 udouble amount
 ```
 
