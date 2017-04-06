@@ -1,0 +1,7 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"backtrace-d": "0.1.2",
+		"io": "0.0.8"
+	}
+}
