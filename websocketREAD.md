@@ -72,7 +72,7 @@ string contents
 
 >#### Receive parameter :
 ```
-int account address cmount,
+int account address count,
 [ string account address, 
   double account balance, 
   bool freezing status]
