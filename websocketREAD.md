@@ -22,7 +22,10 @@
 
 >#### Receive parameter :
 ```
-string receiveBOS, string receiver account address, string account address, udouble amount
+string receiveBOS, 
+string receiver account address, 
+string account address, 
+udouble amount
 ```
 
 - ### type - receiveProposal
